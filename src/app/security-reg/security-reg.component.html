@@ -1,0 +1,46 @@
+<app-admin-navbar></app-admin-navbar>
+<div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h2 style="color: #2b3185;">Security Registration</h2>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Guard Employee number</label>
+                    <input name="guardnumber" [(ngModel)]="guardnumber" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Name</label>
+                    <input  name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Salary</label>
+                    <input name="salary" [(ngModel)]="salary" type="text" class="form-control">
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Mobile Number</label>
+                    <input name="mobileNumber" [(ngModel)]="mobileNumber" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label  for="" class="forem-label">User Name</label>
+                    <input name="userName" [(ngModel)]="userName" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label  for="" class="forem-label">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-primary">add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,42 @@
+<app-admin-navbar></app-admin-navbar>
+<div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="name" class="form-label">Date</label>
+                    <input name="date" [(ngModel)]="date" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="searchE()" class="btn btn-primary ">search</button>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                        <tr scope="row">
+                            <th scope="col">Guest id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Checkin</th>
+                            <th scope="col">Checkout</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr *ngFor="let i of data1" scope="row">
+                            <td scope="col"  >{{i.guest_id}}</td>
+                            <td scope="col"  >{{i.name}}</td>
+                            <td scope="col"  >{{i.address}}</td>
+                            <td scope="col" >{{i.login}}</td>
+                            <td scope="col"  >{{i.logout}}</td>
+
+                        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>

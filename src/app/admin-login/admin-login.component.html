@@ -1,0 +1,30 @@
+<div  style="background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);   background-repeat: no-repeat;    background-size: cover;   background-position: center center;">
+    <div class=" d-flex  justify-content-center" style="height: 100vh">
+        <div class="row align-self-center d-flex " style="display: contents;">
+
+                <div class="row g-3 mt-4 " >
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 vm-2">
+                        <h3 style="color: #033033;"> Admin login</h3>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label style="color: #000000;" for="username" class="form-label">User Name</label>
+                        <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label style="color: #000000;" for="password" class="form-label">password</label>
+                        <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a (click)="login()" class="btn btn-primary">login</a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a href="/employee" class="btn btn-warning">Employee Login</a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a href="/guard" class="btn btn-warning"> Sec Login </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>

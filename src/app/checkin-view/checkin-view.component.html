@@ -1,0 +1,88 @@
+<app-security-navbar></app-security-navbar>
+<app-admin-navbar *ngIf="emp == 1 "></app-admin-navbar>
+<div *ngIf="emp == 1 ">
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="name" style="color: #F806CC;" class="form-label">Date</label>
+                    <input name="date" [(ngModel)]="date" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button  style="background-color: #548CFF;" (click)="searchE()" class="btn ">search</button>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <table class="table table-dark table-striped">
+                    <thead>
+                    <tr scope="row">
+                        <th scope="col">emp code</th>
+                        <th scope="col">designation</th>
+                        <th scope="col">typeOfleave</th>
+                        <th scope="col">login</th>
+                        <th scope="col">logout</th>
+                        <th scope="col">minutes</th>
+                    </tr></thead>
+                    <tbody>
+                    <tr *ngFor="let i of data1" scope="row">
+                        <td scope="col"  >{{i.emp_id}}</td>
+                        <td scope="col"  >{{i.name}}</td>
+                        <td scope="col"  >{{i.designation}}</td>
+                        <td scope="col"  >{{i.login}}</td>
+                        <td scope="col"  >{{i.logout}}</td>
+                        <td scope="col"  >{{i.minutes}}</td>
+
+                    </tr></tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+<div *ngIf="emp == 0 ">
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="row g-3 mt-4">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="name"  class="form-label">Date</label>
+                        <input name="date" [(ngModel)]="date" type="date" class="form-control">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <button   (click)="searchE()" class="btn btn-primary ">search</button>
+                    </div>
+                </div>
+    
+                <div class="row g-3 mt-4">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                        <tr scope="row">
+                            <th scope="col">Employee code</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Leave Type</th>
+                            <th scope="col">Checkin</th>
+                            <th scope="col">Checkout</th>
+                            <th scope="col">Time</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr *ngFor="let i of data1" scope="row">
+                            <td scope="col"  >{{i.emp_id}}</td>
+                            <td scope="col"  >{{i.name}}</td>
+                            <td scope="col"  >{{i.designation}}</td>
+                            <td scope="col"  >{{i.login}}</td>
+                            <td scope="col"  >{{i.logout}}</td>
+                            <td scope="col"  >{{i.minutes}}</td>
+    
+                        </tr></tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div></div>

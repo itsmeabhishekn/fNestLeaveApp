@@ -1,0 +1,32 @@
+<app-security-navbar></app-security-navbar>
+<div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+              <div class="row g-3 mt-4">
+                  <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4" *ngFor=" let i of data">
+                        <div class="card" style="max-width: 540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEtG5Mg9hoHc6Y3yd71erMKYngek1RnYINtg&usqp=CAU" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-header">Employee code - {{i.guardnumber}}</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Name - {{i.name}}</h5>
+                                <p class="card-text">Salary - {{i.salary}}</p>
+                                <p class="card-text">Mobile Number - {{i.mobileNumber}}</p>
+                                <p class="card-text">User Name - {{i.userName}}</p>
+                               
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>     
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  

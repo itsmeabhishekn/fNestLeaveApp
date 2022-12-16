@@ -1,0 +1,37 @@
+<app-emp-navbar></app-emp-navbar>
+<div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                        <tr scope="row">
+                            <th scope="col">Leave Type</th>
+                            <th scope="col">Leave Cause</th>
+                            <th scope="col">Starting Date</th>
+                            <th scope="col">Ending Date</th>
+                            <th scope="col">Days</th>
+                            <th scope="col">Status</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr *ngFor="let i of data" scope="row">
+                            <td scope="col">{{i.typeOfleave}}</td>
+                            <td scope="col">{{i.reason}}</td>
+                            <td scope="col">{{i.from}}</td>
+                            <td scope="col">{{i.to}}</td>
+                            <td scope="col">{{i.days}}</td>
+                            <td scope="col" *ngIf="i.status==-1"><button class="btn btn-primary" >pending</button></td>
+                            <td scope="col" *ngIf="i.status==1"><button class="btn btn-success" >approved</button></td>
+                            <td scope="col" *ngIf="i.status==0"><button class="btn btn-danger" >rejected</button></td>
+
+                        </tr></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div></div>

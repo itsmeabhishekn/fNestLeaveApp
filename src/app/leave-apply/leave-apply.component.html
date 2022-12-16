@@ -1,0 +1,51 @@
+<app-emp-navbar></app-emp-navbar>
+<div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <nav class="navbar navbar-expand-lg " >
+                    <div class="container-fluid">
+                   
+                        <h3>Casual Leave <span class="badge bg-secondary">{{data.casual_leaves}} </span></h3>
+                        <br>
+                        <h3> Sick Leave <span class="badge bg-secondary">{{data.sick_leave}}</span></h3>
+                        <br>
+                        <h3> Special Leave <span class="badge bg-secondary">{{data.special_leave}}</span></h3>                       
+                      
+                    </div>
+                  </nav>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h4 >Leave Application Form</h4>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label  for="" class="form-label">Cause of Leave</label>
+                    <input name="reason" [(ngModel)]="reason" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Type of Leave</label>
+                <select  name="typeOfleave" [(ngModel)]="typeOfleave" class="form-select" >
+                  
+                  <option value="casual">casual</option>
+                  <option value="sick">sick</option>
+                  <option value="special">special</option>
+                </select>
+            </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Starting Date</label>
+                    <input name="from" [(ngModel)]="from" type="date" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label  for="" class="forem-label">Ending Date</label>
+                    <input name="to" [(ngModel)]="to" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()"  #CF0000 class="btn btn-success">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
